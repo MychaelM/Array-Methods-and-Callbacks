@@ -11,6 +11,16 @@ console.log('its working');
 (c) Home Team goals for 2014 world cup final
 (d) Away Team goals for 2014 world cup final
 (e) Winner of 2014 world cup final */
+for (let i = 0; i < fifaData.length; i++) {
+    const element = fifaData[i];
+    if (element.Year === 2014 && element.Stage === "Final") {
+        console.log(element['Home Team Name']);
+        console.log(element["Away Team Name"]);
+        console.log(element["Home Team Goals"]);
+        console.log(element["Away Team Goals"]);
+        console.log(element['Win conditions']);
+    }
+}
 
 
 /* Task 2: Create a function called  getFinals that takes `data` as an argument and returns an array of objects with only finals data */
